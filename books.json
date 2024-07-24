@@ -1,0 +1,1194 @@
+[
+    {
+        "title": "The Stranger",
+        "author": "Camus, Albert",
+        "rating": "4.02"
+    },
+    {
+        "title": "Small Things Like These",
+        "author": "Keegan, Claire",
+        "rating": "4.18",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 06 Jul 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "In-transit from Box Hill to Pines (Set: 13 Jul 2024)"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Reservation awaiting collection (Set: 15 Jul 2024)"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Available"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 29 Jul 2024"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Available"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 22 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "In-transit from Pines to Nunawading (Set: 13 Jul 2024)"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 13 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Available"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Available"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 24 Jul 2024"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 29 Jul 2024"
+            },
+            {
+                "location": "Warrandyte",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 27 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "A Cage in Search of a Bird",
+        "author": "Noiville, Florence",
+        "rating": "3.51"
+    },
+    {
+        "title": "The Enchanted April",
+        "author": "Arnim, Elizabeth von",
+        "rating": "3.91"
+    },
+    {
+        "title": "Peach Blossom Paradise",
+        "author": "Ge Fei",
+        "rating": "4.05"
+    },
+    {
+        "title": "The Stolen Bicycle",
+        "author": "Wu, Ming-Yi",
+        "rating": "3.88"
+    },
+    {
+        "title": "Klara and the Sun",
+        "author": "Ishiguro, Kazuo*",
+        "rating": "3.75"
+    },
+    {
+        "title": "All My Puny Sorrows",
+        "author": "Toews, Miriam",
+        "rating": "4.01",
+        "availability": [
+            {
+                "location": "Bulleen",
+                "collection": "Adult fiction",
+                "call_number": "N/A",
+                "status": "On Order (Set: 31 May 2024)"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Adult fiction",
+                "call_number": "TOEW",
+                "status": "Onloan - Due: 02 Aug 2024"
+            }
+        ]
+    },
+    {
+        "title": "A Thousand Splendid Suns",
+        "author": "Hosseini, Khaled*",
+        "rating": "4.44",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Adult fiction",
+                "call_number": "HOSS",
+                "status": "Onloan - Due: 31 Jul 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "HOSS",
+                "status": "Onloan - Due: 23 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "The Bee Sting",
+        "author": "Murray, Paul",
+        "rating": "3.97",
+        "availability": [
+            {
+                "location": "Doncaster",
+                "collection": "Adult Fiction Talking Book CD",
+                "call_number": "CD TALK MURR",
+                "status": "Onloan - Due: 22 Aug 2024"
+            }
+        ]
+    },
+    {
+        "title": "Prophet Song",
+        "author": "Lynch, Paul*",
+        "rating": "4.11"
+    },
+    {
+        "title": "North Woods",
+        "author": "Mason, Daniel*",
+        "rating": "4.15"
+    },
+    {
+        "title": "Still Life",
+        "author": "Winman, Sarah",
+        "rating": "4.17",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Large Print Fiction",
+                "call_number": "LP WINM",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "The Island of Missing Trees",
+        "author": "Shafak, Elif*",
+        "rating": "4.15"
+    },
+    {
+        "title": "The Mountains Sing",
+        "author": "Nguy\u1ec5n Phan Qu\u1ebf Mai*",
+        "rating": "4.32"
+    },
+    {
+        "title": "Snow Crash",
+        "author": "Stephenson, Neal*",
+        "rating": "4.02",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "STEP",
+                "status": "Onloan - Due: 25 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "STEP",
+                "status": "In-transit from Nunawading to Box Hill (Set: 14 Jul 2024)"
+            }
+        ]
+    },
+    {
+        "title": "Starter Villain",
+        "author": "Scalzi, John*",
+        "rating": "4.17",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "N/A",
+                "status": "On order"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "N/A",
+                "status": "On order"
+            }
+        ]
+    },
+    {
+        "title": "The Book That Wouldn\u2019t Burn(The Library Trilogy, #1)",
+        "author": "Lawrence, Mark*",
+        "rating": "4.06"
+    },
+    {
+        "title": "The Will of the Many(Hierarchy, #1)",
+        "author": "Islington, James*",
+        "rating": "4.63"
+    },
+    {
+        "title": "Yumi and the Nightmare Painter",
+        "author": "Sanderson, Brandon*",
+        "rating": "4.48"
+    },
+    {
+        "title": "The Color of Magic(Discworld, #1; Rincewind, #1)",
+        "author": "Pratchett, Terry",
+        "rating": "4.00"
+    },
+    {
+        "title": "The Women",
+        "author": "Hannah, Kristin*",
+        "rating": "4.64",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Large Print Fiction",
+                "call_number": "LP HANN",
+                "status": "Awaiting cataloguing (Set: 09 Jul 2024)"
+            }
+        ]
+    },
+    {
+        "title": "Cutting for Stone",
+        "author": "Verghese, Abraham*",
+        "rating": "4.32"
+    },
+    {
+        "title": "A Gentleman in Moscow",
+        "author": "Towles, Amor*",
+        "rating": "4.33",
+        "availability": [
+            {
+                "location": "Pines",
+                "collection": "Adult Fiction Talking Book CD",
+                "call_number": "CD TALK TOWL",
+                "status": "Reservation awaiting collection (Set: 09 Jul 2024)"
+            }
+        ]
+    },
+    {
+        "title": "Welcome to the Hyunam-dong Bookshop",
+        "author": "Bo-reum, Hwang",
+        "rating": "4.02"
+    },
+    {
+        "title": "What You Are Looking For Is in the Library",
+        "author": "Aoyama, Michiko",
+        "rating": "4.10",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Available"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Available"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 21 Jul 2024"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Available"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 29 Jul 2024"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 02 Aug 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 30 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 02 Aug 2024"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 24 Jul 2024"
+            },
+            {
+                "location": "Warrandyte",
+                "collection": "Adult fiction",
+                "call_number": "AOYA",
+                "status": "Onloan - Due: 30 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "Legends & Lattes(Legends & Lattes, #1)",
+        "author": "Baldree, Travis*",
+        "rating": "4.13"
+    },
+    {
+        "title": "Bookshops & Bonedust(Legends & Lattes, #0)",
+        "author": "Baldree, Travis*",
+        "rating": "4.21"
+    },
+    {
+        "title": "The House of the Spirits",
+        "author": "Allende, Isabel*",
+        "rating": "4.28",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "ALLE",
+                "status": "Onloan - Due: 22 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "ALLE",
+                "status": "Onloan - Due: 27 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "Portrait in Sepia",
+        "author": "Allende, Isabel*",
+        "rating": "4.01",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "ALLE",
+                "status": "Onloan - Due: 08 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "Daughter of Fortune",
+        "author": "Allende, Isabel*",
+        "rating": "3.94",
+        "availability": [
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "ALLE",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "ALLE",
+                "status": "Being repaired (Set: 10 May 2023)"
+            }
+        ]
+    },
+    {
+        "title": "Sea of Tranquility",
+        "author": "Mandel, Emily St. John*",
+        "rating": "4.08"
+    },
+    {
+        "title": "Bright Young Women",
+        "author": "Knoll, Jessica*",
+        "rating": "4.02",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Large Print Fiction",
+                "call_number": "LP KNOL",
+                "status": "Awaiting cataloguing (Set: 09 Jul 2024)"
+            }
+        ]
+    },
+    {
+        "title": "Good Material",
+        "author": "Alderton, Dolly",
+        "rating": "3.93",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Adult Fiction Talking Book CD",
+                "call_number": "CD TALK ALDE",
+                "status": "Reservation awaiting collection (Set: 11 Jul 2024)"
+            }
+        ]
+    },
+    {
+        "title": "The Street",
+        "author": "Petry, Ann",
+        "rating": "4.26"
+    },
+    {
+        "title": "I Capture the Castle",
+        "author": "Smith, Dodie",
+        "rating": "4.00",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Junior Fiction",
+                "call_number": "J SMIT",
+                "status": "Available"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Junior Fiction",
+                "call_number": "J SMIT",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Junior Fiction",
+                "call_number": "J SMIT",
+                "status": "Onloan - Due: 26 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Junior Fiction",
+                "call_number": "J SMIT",
+                "status": "Onloan - Due: 20 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "Decline and Fall",
+        "author": "Waugh, Evelyn",
+        "rating": "3.83",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "WAUG",
+                "status": "Available"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "WAUG",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "WAUG",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Bliss Montage",
+        "author": "Ma, Ling*",
+        "rating": "3.91"
+    },
+    {
+        "title": "Fourth Wing(The Empyrean, #1)",
+        "author": "Yarros, Rebecca*",
+        "rating": "4.58"
+    },
+    {
+        "title": "The Hour of the Star",
+        "author": "Lispector, Clarice",
+        "rating": "4.09",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "LISP",
+                "status": "Onloan - Due: 31 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "LISP",
+                "status": "Onloan - Due: 29 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "The Heaven & Earth Grocery Store",
+        "author": "McBride, James*",
+        "rating": "4.02"
+    },
+    {
+        "title": "Lady Tan\u2019s Circle of Women",
+        "author": "See, Lisa*",
+        "rating": "4.36"
+    },
+    {
+        "title": "The Covenant of Water",
+        "author": "Verghese, Abraham*",
+        "rating": "4.45"
+    },
+    {
+        "title": "Mild Vertigo",
+        "author": "Kanai, Mieko",
+        "rating": "3.54"
+    },
+    {
+        "title": "The Emigrants",
+        "author": "Sebald, W.G.",
+        "rating": "4.16"
+    },
+    {
+        "title": "The Loser",
+        "author": "Bernhard, Thomas",
+        "rating": "4.04"
+    },
+    {
+        "title": "Korn\u00e9l Esti",
+        "author": "Kosztol\u00e1nyi, Dezs\u0151",
+        "rating": "4.20"
+    },
+    {
+        "title": "Journey by Moonlight",
+        "author": "Szerb, Antal",
+        "rating": "4.22",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Adult fiction",
+                "call_number": "SZER",
+                "status": "Available"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "SZER",
+                "status": "Onloan - Due: 26 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "Childhood / Youth / Dependency(The Copenhagen Trilogy, #1-3)",
+        "author": "Ditlevsen, Tove",
+        "rating": "4.37"
+    },
+    {
+        "title": "David Copperfield",
+        "author": "Dickens, Charles",
+        "rating": "4.03",
+        "availability": [
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "DICK",
+                "status": "Onloan - Due: 26 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "DICK",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "The Unbearable Lightness of Being",
+        "author": "Kundera, Milan",
+        "rating": "4.11",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "KUND",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Stoner",
+        "author": "Williams, John",
+        "rating": "4.33",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "WILL",
+                "status": "Onloan - Due: 31 Jul 2024"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "WILL",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "WILL",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "WILL",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "The Late Mattia Pascal",
+        "author": "Pirandello, Luigi",
+        "rating": "4.01"
+    },
+    {
+        "title": "Kira-Kira",
+        "author": "Kadohata, Cynthia",
+        "rating": "3.96",
+        "availability": [
+            {
+                "location": "Doncaster",
+                "collection": "Junior Fiction",
+                "call_number": "J KADO",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Junior Fiction",
+                "call_number": "J KADO",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Middlemarch",
+        "author": "Eliot, George",
+        "rating": "4.02",
+        "availability": [
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "ELIO",
+                "status": "Onloan - Due: 01 Aug 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "ELIO",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Middlesex",
+        "author": "Eugenides, Jeffrey",
+        "rating": "4.03",
+        "availability": [
+            {
+                "location": "Nunawading",
+                "collection": "Adult Fiction Talking Book CD",
+                "call_number": "CD TALK EUGE",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Foster",
+        "author": "Keegan, Claire",
+        "rating": "4.33",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 01 Aug 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 26 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 15 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 21 Aug 2024"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Adult fiction",
+                "call_number": "KEEG",
+                "status": "Onloan - Due: 18 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "The Summer Book",
+        "author": "Jansson, Tove",
+        "rating": "4.03"
+    },
+    {
+        "title": "Happy Place",
+        "author": "Henry, Emily*",
+        "rating": "4.00",
+        "availability": [
+            {
+                "location": "Nunawading",
+                "collection": "Large Print Fiction",
+                "call_number": "LP HENR",
+                "status": "Onloan - Due: 05 Aug 2024"
+            }
+        ]
+    },
+    {
+        "title": "Everything I Know About Love",
+        "author": "Alderton, Dolly",
+        "rating": "4.01",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Nonfiction",
+                "call_number": "306.7092 ALDE",
+                "status": "Onloan - Due: 27 Jul 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Nonfiction",
+                "call_number": "306.7092 ALDE",
+                "status": "In-transit from Box Hill to Doncaster (Set: 29 Jun 2024)"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Nonfiction",
+                "call_number": "306.7092 ALDE",
+                "status": "Onloan - Due: 04 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Nonfiction",
+                "call_number": "306.7092 ALDE",
+                "status": "Onloan - Due: 22 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Nonfiction",
+                "call_number": "306.7092 ALDE",
+                "status": "Onloan - Due: 03 Aug 2024"
+            }
+        ]
+    },
+    {
+        "title": "La tregua",
+        "author": "Benedetti, Mario",
+        "rating": "4.18"
+    },
+    {
+        "title": "The Aleph and Other Stories",
+        "author": "Borges, Jorge Luis",
+        "rating": "4.34"
+    },
+    {
+        "title": "Hopscotch",
+        "author": "Cort\u00e1zar, Julio",
+        "rating": "4.21"
+    },
+    {
+        "title": "Ficciones",
+        "author": "Borges, Jorge Luis",
+        "rating": "4.42"
+    },
+    {
+        "title": "Cosmicomics",
+        "author": "Calvino, Italo",
+        "rating": "4.16"
+    },
+    {
+        "title": "Tom Lake",
+        "author": "Patchett, Ann",
+        "rating": "4.00",
+        "availability": [
+            {
+                "location": "Blackburn",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 03 Aug 2024"
+            },
+            {
+                "location": "Blackburn",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 23 Jul 2024"
+            },
+            {
+                "location": "Blackburn",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 03 Aug 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 27 Jul 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 19 Jul 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 16 Jul 2024"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Available"
+            },
+            {
+                "location": "Box Hill",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 01 Aug 2024"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 22 Jul 2024"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 05 Aug 2024"
+            },
+            {
+                "location": "Bulleen",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Reservation awaiting collection (Set: 09 Jul 2024)"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Available"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 27 Jul 2024"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 29 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 03 Aug 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 23 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 25 Jul 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 03 Aug 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 01 Aug 2024"
+            },
+            {
+                "location": "Pines",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 01 Aug 2024"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 06 Aug 2024"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 29 Jul 2024"
+            },
+            {
+                "location": "Warrandyte",
+                "collection": "Bestsellers",
+                "call_number": "PATC",
+                "status": "Onloan - Due: 26 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "Go as a River",
+        "author": "Read, Shelley*",
+        "rating": "4.29",
+        "availability": [
+            {
+                "location": "Vermont",
+                "collection": "Large Print Fiction",
+                "call_number": "LP READ",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Maame",
+        "author": "George, Jessica",
+        "rating": "4.07",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "GEOR",
+                "status": "Onloan - Due: 02 Aug 2024"
+            },
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "GEOR",
+                "status": "Onloan - Due: 18 Jul 2024"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "GEOR",
+                "status": "Onloan - Due: 21 Jul 2024"
+            }
+        ]
+    },
+    {
+        "title": "The Stationery Shop",
+        "author": "Kamali, Marjan*",
+        "rating": "4.22",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "KAMA",
+                "status": "Available"
+            },
+            {
+                "location": "Nunawading",
+                "collection": "Adult fiction",
+                "call_number": "KAMA",
+                "status": "Available"
+            },
+            {
+                "location": "Pines",
+                "collection": "Adult fiction",
+                "call_number": "KAMA",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Out",
+        "author": "Kirino, Natsuo",
+        "rating": "3.95",
+        "availability": [
+            {
+                "location": "Vermont",
+                "collection": "Chinese Fiction",
+                "call_number": "CHI KIRI",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Normal People",
+        "author": "Rooney, Sally*",
+        "rating": "3.81",
+        "availability": [
+            {
+                "location": "Nunawading",
+                "collection": "Chinese Fiction",
+                "call_number": "CHI ROON",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Freshwater",
+        "author": "Emezi, Akwaeke*",
+        "rating": "4.02",
+        "availability": [
+            {
+                "location": "Box Hill",
+                "collection": "Adult fiction",
+                "call_number": "EMEZ",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "No One Writes Back",
+        "author": "Eun-Jin, Jang",
+        "rating": "4.20"
+    },
+    {
+        "title": "Ms Ice Sandwich",
+        "author": "Kawakami, Mieko",
+        "rating": "3.78"
+    },
+    {
+        "title": "The Housekeeper and the Professor",
+        "author": "Ogawa, Y\u014dko",
+        "rating": "4.05"
+    },
+    {
+        "title": "Stay True",
+        "author": "Hsu, Hua*",
+        "rating": "4.03"
+    },
+    {
+        "title": "Happy Hour",
+        "author": "Granados, Marlowe",
+        "rating": "3.50",
+        "availability": [
+            {
+                "location": "Doncaster",
+                "collection": "Adult fiction",
+                "call_number": "GRAN",
+                "status": "Available"
+            },
+            {
+                "location": "Vermont",
+                "collection": "Adult fiction",
+                "call_number": "GRAN",
+                "status": "Available"
+            }
+        ]
+    },
+    {
+        "title": "Spring Snow(The Sea of Fertility, #1)",
+        "author": "Mishima, Yukio",
+        "rating": "4.16"
+    },
+    {
+        "title": "Seven Days in June",
+        "author": "Williams, Tia*",
+        "rating": "4.02"
+    },
+    {
+        "title": "Cannery Row(Cannery Row, #1)",
+        "author": "Steinbeck, John",
+        "rating": "4.06"
+    }
+]
