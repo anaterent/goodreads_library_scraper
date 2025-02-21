@@ -13,21 +13,6 @@
         ]
     },
     {
-        "title": "The Watchmaker of Filigree Street(The Watchmaker of Filigree Street, #1)",
-        "author": "Pulley, Natasha",
-        "rating": "3.73"
-    },
-    {
-        "title": "There Are Rivers in the Sky",
-        "author": "Shafak, Elif*",
-        "rating": "4.43"
-    },
-    {
-        "title": "The Stranger",
-        "author": "Camus, Albert",
-        "rating": "4.03"
-    },
-    {
         "title": "Small Things Like These",
         "author": "Keegan, Claire",
         "rating": "4.15",
@@ -119,39 +104,6 @@
         ]
     },
     {
-        "title": "A Cage in Search of a Bird",
-        "author": "Noiville, Florence",
-        "rating": "3.51"
-    },
-    {
-        "title": "The Enchanted April",
-        "author": "Arnim, Elizabeth von",
-        "rating": "3.91"
-    },
-    {
-        "title": "Peach Blossom Paradise",
-        "author": "Ge Fei",
-        "rating": "4.06"
-    },
-    {
-        "title": "The Stolen Bicycle",
-        "author": "Wu, Ming-Yi",
-        "rating": "3.89"
-    },
-    {
-        "title": "All My Puny Sorrows",
-        "author": "Toews, Miriam",
-        "rating": "4.01",
-        "availability": [
-            {
-                "location": "Bulleen",
-                "collection": "Adult fiction",
-                "call_number": "TOEW",
-                "status": "Available"
-            }
-        ]
-    },
-    {
         "title": "A Thousand Splendid Suns",
         "author": "Hosseini, Khaled*",
         "rating": "4.44",
@@ -189,52 +141,6 @@
         ]
     },
     {
-        "title": "The Bee Sting",
-        "author": "Murray, Paul",
-        "rating": "3.92",
-        "availability": [
-            {
-                "location": "Warrandyte",
-                "collection": "Adult Fiction Talking Book CD",
-                "call_number": "CD TALK MURR",
-                "status": "Available"
-            }
-        ]
-    },
-    {
-        "title": "Prophet Song",
-        "author": "Lynch, Paul*",
-        "rating": "4.06"
-    },
-    {
-        "title": "North Woods",
-        "author": "Mason, Daniel*",
-        "rating": "4.12"
-    },
-    {
-        "title": "Still Life",
-        "author": "Winman, Sarah",
-        "rating": "4.16",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Large Print Fiction",
-                "call_number": "LP WINM",
-                "status": "Available"
-            }
-        ]
-    },
-    {
-        "title": "The Island of Missing Trees",
-        "author": "Shafak, Elif*",
-        "rating": "4.15"
-    },
-    {
-        "title": "The Mountains Sing",
-        "author": "Nguy\u1ec5n Phan Qu\u1ebf Mai*",
-        "rating": "4.32"
-    },
-    {
         "title": "Snow Crash",
         "author": "Stephenson, Neal*",
         "rating": "4.02",
@@ -252,21 +158,6 @@
                 "status": "Reservation awaiting collection (Set: 17 Feb 2025)"
             }
         ]
-    },
-    {
-        "title": "Starter Villain",
-        "author": "Scalzi, John*",
-        "rating": "4.14"
-    },
-    {
-        "title": "The Book That Wouldn\u2019t Burn(The Library Trilogy, #1)",
-        "author": "Lawrence, Mark*",
-        "rating": "4.01"
-    },
-    {
-        "title": "The Will of the Many(Hierarchy, #1)",
-        "author": "Islington, James*",
-        "rating": "4.61"
     },
     {
         "title": "Yumi and the Nightmare Painter",
@@ -292,47 +183,6 @@
                 "status": "Onloan - Due: 11 Mar 2025"
             }
         ]
-    },
-    {
-        "title": "The Color of Magic(Discworld, #1; Rincewind, #1)",
-        "author": "Pratchett, Terry",
-        "rating": "4.00"
-    },
-    {
-        "title": "The Women",
-        "author": "Hannah, Kristin*",
-        "rating": "4.62",
-        "availability": [
-            {
-                "location": "Doncaster",
-                "collection": "Large Print Fiction",
-                "call_number": "LP HANN",
-                "status": "Reservation awaiting collection (Set: 18 Feb 2025)"
-            }
-        ]
-    },
-    {
-        "title": "Cutting for Stone",
-        "author": "Verghese, Abraham*",
-        "rating": "4.33"
-    },
-    {
-        "title": "A Gentleman in Moscow",
-        "author": "Towles, Amor*",
-        "rating": "4.33",
-        "availability": [
-            {
-                "location": "Pines",
-                "collection": "Adult Fiction Talking Book CD",
-                "call_number": "CD TALK TOWL",
-                "status": "Available"
-            }
-        ]
-    },
-    {
-        "title": "Welcome to the Hyunam-Dong Bookshop",
-        "author": "Hwang, Bo-Reum",
-        "rating": "3.97"
     },
     {
         "title": "What You Are Looking For Is in the Library",
@@ -414,48 +264,6 @@
         ]
     },
     {
-        "title": "Legends & Lattes(Legends & Lattes, #1)",
-        "author": "Baldree, Travis*",
-        "rating": "4.08"
-    },
-    {
-        "title": "Bookshops & Bonedust(Legends & Lattes, #0)",
-        "author": "Baldree, Travis*",
-        "rating": "4.15"
-    },
-    {
-        "title": "The House of the Spirits",
-        "author": "Allende, Isabel*",
-        "rating": "4.29",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "ALLE",
-                "status": "Available"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "ALLE",
-                "status": "Reservation awaiting collection (Set: 18 Feb 2025)"
-            }
-        ]
-    },
-    {
-        "title": "Portrait in Sepia",
-        "author": "Allende, Isabel*",
-        "rating": "4.02",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "ALLE",
-                "status": "Available"
-            }
-        ]
-    },
-    {
         "title": "Daughter of Fortune",
         "author": "Allende, Isabel*",
         "rating": "3.94",
@@ -479,11 +287,6 @@
                 "status": "Available"
             }
         ]
-    },
-    {
-        "title": "Sea of Tranquility",
-        "author": "Mandel, Emily St. John*",
-        "rating": "4.07"
     },
     {
         "title": "Bright Young Women",
@@ -528,11 +331,6 @@
                 "status": "Onloan - Due: 07 Mar 2025"
             }
         ]
-    },
-    {
-        "title": "The Street",
-        "author": "Petry, Ann",
-        "rating": "4.27"
     },
     {
         "title": "I Capture the Castle",
@@ -583,10 +381,5 @@
                 "status": "Available"
             }
         ]
-    },
-    {
-        "title": "Bliss Montage",
-        "author": "Ma, Ling*",
-        "rating": "3.90"
     }
 ]

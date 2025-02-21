@@ -27,14 +27,16 @@ class GoodreadsScraper:
             list_url = f"{base_url}?shelf={self.list_name}&page={page}"
             response = requests.get(list_url, headers=headers)
 
-            if response.status_code != 200 or page == page_limit:
+            if response.status_code != 200 or page == (
+                page_limit + 1
+            ):  # add 1 so that the number of pages scraped ends up = the page_limit
                 print(f"Page limit of {page} pages reached")
                 # print(response)
                 break
 
             soup = BeautifulSoup(response.content, "html.parser")
             if bool(soup.find("html", {"class": "desktop"})):
-                print("DESKPTOP YES")
+                print("DESKTOP YES")
             else:
                 print("MOBILE YES")
             # Check if the shelf is empty
@@ -92,7 +94,8 @@ class GoodreadsScraper:
                     if availability_info["location"] == chosen_library:
                         books_in_library.append(book)
                         break
-        print(format_book_data(books_in_library, chosen_library))
+        # print(format_book_data(books_in_library, chosen_library))
+        return books_in_library
 
 
 class LibraryScraper:
@@ -145,9 +148,9 @@ class LibraryScraper:
             # print("goodreads:", self.book["author"].lower(), "| library:", author)
 
             # Normalize and compare titles and authors
-            if not self.is_title_match(self.book["title"], title) or not self.is_author_match(
-                self.book["author"], author
-            ):
+            if not self.is_title_match(
+                self.book["title"], title
+            ) or not self.is_author_match(self.book["author"], author):
                 continue
 
             book_link = book_result.find("a", href=True)
@@ -217,32 +220,30 @@ def save_books_to_file(books, filename="books.json"):
     with open(filename, "w") as file:
         json.dump(books, file, indent=4)
 
+
 def format_book_data(books, chosen_library):
     formatted_books = []
     for book in books:
         formatted_book = f"Title: {book['title']}\n"
         formatted_book += f"Author: {book['author']}\n"
         formatted_book += f"Rating: {book['rating']}\n"
-        for availability in book['availability']:
+        for availability in book["availability"]:
             if availability["location"] == chosen_library:
                 formatted_book += (
                     f"Branch: {availability['location']}, "
                     f"Call Number: {availability['call_number']}, "
                     f"Status: {availability['status']}\n"
                 )
-        
-        
+
         formatted_books.append(formatted_book.strip())
 
     return "\n\n".join(formatted_books)
 
+
 if __name__ == "__main__":
     goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
     library = "Nunawading"
-    books = goodreads_scraper.scrape_goodreads_list(5, library)
+    books = goodreads_scraper.scrape_goodreads_list(2, library)
     save_books_to_file(books)
-    print(goodreads_scraper.find_at(library))
-
-    # print(f"Books scraped: {len(books)}")
-    # if books:
-    #     print("First book:", books[0])
+    books_at_lib = goodreads_scraper.find_at(library)
+    save_books_to_file(books_at_lib, "books_at_lib.json")
