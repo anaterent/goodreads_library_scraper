@@ -11,12 +11,30 @@
 <body>
     <div class="container mt-5">
         <h2>Books Available at {{ library }}</h2>
-
+        <!-- Checkbox to filter only available books -->
+        <div class="form-check mb-3">
+            <input type="checkbox" id="availableNowCheckbox" class="form-check-input">
+            <label class="form-check-label" for="availableNowCheckbox">Only show books available now</label>
+        </div>
         {% if books %}
         <ul class="list-group">
             {% for book in books %}
-            <li class="list-group-item">
-                <pre>{{ book }}</pre>
+            <li class="list-group-item book-item">
+                <h4>Title: {{ book.title }}</h4>
+                <p>Author: {{ book.author }}</p>
+                <p>Rating: {{ book.rating }}</p>
+                <h5>Availability:</h5>
+                <ul>
+                    {% for availability in book.availability %}
+                    {% if availability.location == library %}
+                    <li class="availability-item" data-status="{{ availability.status }}">
+                        Branch: {{ availability.location }},
+                        Call Number: {{ availability.call_number }},
+                        Status: {{ availability.status }}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
             </li>
             {% endfor %}
         </ul>
@@ -26,6 +44,9 @@
 
         <a href="/" class="btn btn-primary mt-3">Search Again</a>
     </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='filterAvailable.js') }}"></script>
 </body>
 
 </html>
