@@ -80,7 +80,7 @@ class GoodreadsScraper:
 
     def find_at(self, chosen_library):
         """
-        Find which books from your list are in your chosen library/ies.
+        Find which books from your list are in your chosen library
         """
         # chosen_library = "Nunawading"
         books_in_library = []
