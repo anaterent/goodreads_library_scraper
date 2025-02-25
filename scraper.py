@@ -165,7 +165,7 @@ class LibraryScraper:
             if image_tag:
                 img = image_tag.find("img", src=True)
                 if img:
-                    image_url = img["src"]
+                    image_url = img["longdesc"]
 
             availability = self.get_book_availability(availability_url)
             return availability, image_url
@@ -248,11 +248,11 @@ def format_book_data(books, chosen_library):
     return "\n\n".join(formatted_books)
 
 
-if __name__ == "__main__":
-    goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
-    library = "Nunawading"
-    books = goodreads_scraper.scrape_goodreads_list(
-        page_limit=1, chosen_library=library
-    )
-    books_at_lib = goodreads_scraper.find_at(library)
-    save_books_to_file(books_at_lib, "books_at_lib.json")
+# if __name__ == "__main__":
+#     goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
+#     library = "Nunawading"
+#     books = goodreads_scraper.scrape_goodreads_list(
+#         page_limit=1, chosen_library=library
+#     )
+#     books_at_lib = goodreads_scraper.find_at(library)
+#     save_books_to_file(books_at_lib, "books_at_lib.json")

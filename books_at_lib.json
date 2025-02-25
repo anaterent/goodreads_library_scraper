@@ -11,7 +11,7 @@
                 "status": "Onloan - Due: 21 Feb 2025"
             }
         ],
-        "img_url": "/docs/WPAC/images/loading.png"
+        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9781250074812/mc.gif&client=wmrlp&upc=&oclc=**"
     },
     {
         "title": "Small Things Like These",
@@ -103,7 +103,7 @@
                 "status": "Onloan - Due: 06 Mar 2025"
             }
         ],
-        "img_url": "/docs/WPAC/images/loading.png"
+        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9780571368709/mc.gif&client=wmrlp&upc=&oclc=1317511094**"
     },
     {
         "title": "A Thousand Splendid Suns",
@@ -141,7 +141,7 @@
                 "status": "Onloan - Due: 11 Mar 2025"
             }
         ],
-        "img_url": "/docs/WPAC/images/loading.png"
+        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9780747585893/mc.gif&client=wmrlp&upc=&oclc=**"
     },
     {
         "title": "Snow Crash",
@@ -161,6 +161,6 @@
                 "status": "Onloan - Due: 14 Mar 2025"
             }
         ],
-        "img_url": "/docs/WPAC/images/loading.png"
+        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9780553380958/mc.gif&client=wmrlp&upc=&oclc=**"
     }
 ]
