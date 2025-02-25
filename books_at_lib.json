@@ -10,7 +10,8 @@
                 "call_number": "EUGE",
                 "status": "Onloan - Due: 21 Feb 2025"
             }
-        ]
+        ],
+        "img_url": "/docs/WPAC/images/loading.png"
     },
     {
         "title": "Small Things Like These",
@@ -39,7 +40,7 @@
                 "location": "Bulleen",
                 "collection": "Adult fiction",
                 "call_number": "KEEG",
-                "status": "Reservation awaiting collection (Set: 18 Feb 2025)"
+                "status": "Onloan - Due: 15 Mar 2025"
             },
             {
                 "location": "Bulleen",
@@ -101,7 +102,8 @@
                 "call_number": "KEEG",
                 "status": "Onloan - Due: 06 Mar 2025"
             }
-        ]
+        ],
+        "img_url": "/docs/WPAC/images/loading.png"
     },
     {
         "title": "A Thousand Splendid Suns",
@@ -124,7 +126,7 @@
                 "location": "Nunawading",
                 "collection": "Adult fiction",
                 "call_number": "HOSS",
-                "status": "Onloan - Due: 14 Mar 2025"
+                "status": "Available"
             },
             {
                 "location": "Pines",
@@ -138,7 +140,8 @@
                 "call_number": "HOSS",
                 "status": "Onloan - Due: 11 Mar 2025"
             }
-        ]
+        ],
+        "img_url": "/docs/WPAC/images/loading.png"
     },
     {
         "title": "Snow Crash",
@@ -155,231 +158,9 @@
                 "location": "Nunawading",
                 "collection": "Adult fiction",
                 "call_number": "STEP",
-                "status": "Reservation awaiting collection (Set: 17 Feb 2025)"
+                "status": "Onloan - Due: 14 Mar 2025"
             }
-        ]
-    },
-    {
-        "title": "Yumi and the Nightmare Painter",
-        "author": "Sanderson, Brandon*",
-        "rating": "4.46",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "SAND",
-                "status": "Available"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "SAND",
-                "status": "Onloan - Due: 13 Mar 2025"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "SAND",
-                "status": "Onloan - Due: 11 Mar 2025"
-            }
-        ]
-    },
-    {
-        "title": "What You Are Looking For Is in the Library",
-        "author": "Aoyama, Michiko",
-        "rating": "4.08",
-        "availability": [
-            {
-                "location": "Blackburn",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Bulleen",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Reservation awaiting collection (Set: 20 Feb 2025)"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Onloan - Due: 23 Feb 2025"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Onloan - Due: 26 Feb 2025"
-            },
-            {
-                "location": "Vermont",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Available"
-            },
-            {
-                "location": "Warrandyte",
-                "collection": "Adult fiction",
-                "call_number": "AOYA",
-                "status": "Onloan - Due: 05 Mar 2025"
-            }
-        ]
-    },
-    {
-        "title": "Daughter of Fortune",
-        "author": "Allende, Isabel*",
-        "rating": "3.94",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "ALLE",
-                "status": "Available"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "ALLE",
-                "status": "Onloan - Due: 08 Mar 2025"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "ALLE",
-                "status": "Available"
-            }
-        ]
-    },
-    {
-        "title": "Bright Young Women",
-        "author": "Knoll, Jessica*",
-        "rating": "4.00",
-        "availability": [
-            {
-                "location": "Nunawading",
-                "collection": "Thrillers",
-                "call_number": "THRILLERS",
-                "status": "Reservation awaiting collection (Set: 18 Feb 2025)"
-            },
-            {
-                "location": "Vermont",
-                "collection": "Thrillers",
-                "call_number": "THRILLERS",
-                "status": "Onloan - Due: 11 Mar 2025"
-            }
-        ]
-    },
-    {
-        "title": "Good Material",
-        "author": "Alderton, Dolly",
-        "rating": "3.86",
-        "availability": [
-            {
-                "location": "Blackburn",
-                "collection": "Romance",
-                "call_number": "ROMANCE",
-                "status": "Onloan - Due: 18 Feb 2025"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Romance",
-                "call_number": "ROMANCE",
-                "status": "Onloan - Due: 04 Mar 2025"
-            },
-            {
-                "location": "Warrandyte",
-                "collection": "Romance",
-                "call_number": "ROMANCE",
-                "status": "Onloan - Due: 07 Mar 2025"
-            }
-        ]
-    },
-    {
-        "title": "I Capture the Castle",
-        "author": "Smith, Dodie",
-        "rating": "3.99",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "SMIT",
-                "status": "Onloan - Due: 23 Feb 2025"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "SMIT",
-                "status": "Available"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "SMIT",
-                "status": "Available"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "SMIT",
-                "status": "Available"
-            }
-        ]
-    },
-    {
-        "title": "Decline and Fall",
-        "author": "Waugh, Evelyn",
-        "rating": "3.83",
-        "availability": [
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "WAUG",
-                "status": "Available"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "WAUG",
-                "status": "Available"
-            }
-        ]
+        ],
+        "img_url": "/docs/WPAC/images/loading.png"
     }
 ]

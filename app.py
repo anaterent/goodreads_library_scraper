@@ -27,10 +27,8 @@ class UserForm(FlaskForm):
 
 def scraper_init(username: str, list_name: str, library: str):
     goodreads_scraper = GoodreadsScraper(username, list_name)
-    library = library
-    books = goodreads_scraper.scrape_goodreads_list(1, 1, library)
+    goodreads_scraper.scrape_goodreads_list(page_limit=1,chosen_library=library)
     books_at_lib = goodreads_scraper.find_at(library)
-    # return format_book_data(books_at_lib, library)
     return books_at_lib
 
 
@@ -45,9 +43,6 @@ def index():
 
         books_at_lib = scraper_init(username, list_name, library)  # Get books
 
-        # session["books_at_lib"] = books_at_lib.split(
-        #     "\n\n"
-        # )  # Convert string into a list of books
         session["books_at_lib"] = books_at_lib
 
         return redirect(
@@ -75,4 +70,4 @@ def user():
 
 # Run the app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

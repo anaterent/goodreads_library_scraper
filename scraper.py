@@ -15,22 +15,20 @@ class GoodreadsScraper:
         self.list_name = list_name
         self.books = []
 
-    def scrape_goodreads_list(self, page=1, page_limit=None, chosen_library=None):
+    def scrape_goodreads_list(
+        self, page: int = 1, page_limit: float|int = float("inf"), chosen_library=None
+    ):
         """
         Scrapes the entire given goodreads list.
         """
         base_url = f"https://www.goodreads.com/review/list/{self.user}"
-
+        last_page = page + page_limit
         # only desktop html targetted for now
         while True:
             list_url = f"{base_url}?shelf={self.list_name}&page={page}"
             response = requests.get(list_url, headers=headers)
-
-            if response.status_code != 200 or page == (
-                page_limit + 1
-            ):  # add 1 so that the number of pages scraped ends up = the page_limit
-                print(f"Page limit of {(page_limit + 1)} pages reached")
-                # print(response)
+            if response.status_code != 200 or page == last_page:
+                print(f"Page limit of {last_page} pages reached")
                 break
 
             soup = BeautifulSoup(response.content, "html.parser")
@@ -68,9 +66,13 @@ class GoodreadsScraper:
                 )
                 book = {"title": title, "author": author, "rating": rating}
                 lib_scraper = LibraryScraper(book, chosen_library)
-                availability = lib_scraper.check_local_library()
-                if availability:
-                    book["availability"] = availability
+                result = lib_scraper.check_local_library()
+                if result is not None:
+                    availability, img_url = result
+                    if availability:
+                        book["availability"] = availability
+                    if img_url:
+                        book["img_url"] = img_url
                 self.books.append(book)
 
             print(f"Scraped page {page}, found {len(rows)} books.")
@@ -78,15 +80,14 @@ class GoodreadsScraper:
 
         return self.books
 
-    def find_at(self, chosen_library):
+    def find_at(self, chosen_library: str):
         """
         Find which books from your list are in your chosen library
         """
-        # chosen_library = "Nunawading"
+        # eg. chosen_library = "Nunawading"
         books_in_library = []
 
         # return books_in_library
-        print(f"Books available at {chosen_library}: ")
         for book in self.books:
             if "availability" in book:
                 for availability_info in book["availability"]:
@@ -143,8 +144,6 @@ class LibraryScraper:
                 .get_text()
                 .lower()
             )
-            # print("goodreads:", self.book["title"].lower(), "| library:", title)
-            # print("goodreads:", self.book["author"].lower(), "| library:", author)
 
             # Normalize and compare titles and authors
             if not self.is_title_match(
@@ -159,8 +158,18 @@ class LibraryScraper:
                 availability_url = book_details_url.replace(
                     "FULL/WPAC/BIBENQ", "XHLD/WPAC/BIBENQ"
                 )
-                return self.get_book_availability(availability_url)
-        return {}
+
+            # Extract book image
+            image_tag = book_result.find_previous("div", class_="card-list-image-body")
+            image_url = None
+            if image_tag:
+                img = image_tag.find("img", src=True)
+                if img:
+                    image_url = img["src"]
+
+            availability = self.get_book_availability(availability_url)
+            return availability, image_url
+        return None
 
     def is_title_match(self, title1, title2):
         """
@@ -212,7 +221,7 @@ class LibraryScraper:
                     }
                 )
             return availability
-        return []
+        return None
 
 
 def save_books_to_file(books, filename="books.json"):
@@ -239,10 +248,11 @@ def format_book_data(books, chosen_library):
     return "\n\n".join(formatted_books)
 
 
-# if __name__ == "__main__":
-#     goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
-#     library = "Nunawading"
-#     books = goodreads_scraper.scrape_goodreads_list(2, library)
-#     save_books_to_file(books)
-#     books_at_lib = goodreads_scraper.find_at(library)
-#     save_books_to_file(books_at_lib, "books_at_lib.json")
+if __name__ == "__main__":
+    goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
+    library = "Nunawading"
+    books = goodreads_scraper.scrape_goodreads_list(
+        page_limit=1, chosen_library=library
+    )
+    books_at_lib = goodreads_scraper.find_at(library)
+    save_books_to_file(books_at_lib, "books_at_lib.json")

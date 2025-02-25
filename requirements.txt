@@ -1,0 +1,7 @@
+flask
+flask-bootstrap
+flask-wtf
+wtforms
+gunicorn
+requests
+beautifulsoup4

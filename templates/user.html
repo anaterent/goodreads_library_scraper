@@ -19,22 +19,29 @@
         {% if books %}
         <ul class="list-group">
             {% for book in books %}
-            <li class="list-group-item book-item">
-                <h4>Title: {{ book.title }}</h4>
-                <p>Author: {{ book.author }}</p>
-                <p>Rating: {{ book.rating }}</p>
-                <h5>Availability:</h5>
-                <ul>
-                    {% for availability in book.availability %}
-                    {% if availability.location == library %}
-                    <li class="availability-item" data-status="{{ availability.status }}">
-                        Branch: {{ availability.location }},
-                        Call Number: {{ availability.call_number }},
-                        Status: {{ availability.status }}
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
+            <li class="list-group-item book-item d-flex align-items-start">
+                <img src="{{ book.img_url }}" alt="Cover image of {{ book.title }}" class="img-fluid me-3"
+                    style="max-width: 150px; max-height: 200px;">
+                <div>
+
+
+                    <h4>Title: {{ book.title }}</h4>
+                    <p>Author: {{ book.author }}</p>
+                    <p>Rating: {{ book.rating }}</p>
+
+                    <h5>Availability:</h5>
+                    <ul>
+                        {% for availability in book.availability %}
+                        {% if availability.location == library %}
+                        <li class="availability-item" data-status="{{ availability.status }}">
+                            Branch: {{ availability.location }},
+                            Call Number: {{ availability.call_number }},
+                            Status: {{ availability.status }}
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </li>
             {% endfor %}
         </ul>
