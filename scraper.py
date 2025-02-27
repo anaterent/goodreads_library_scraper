@@ -16,7 +16,7 @@ class GoodreadsScraper:
         self.books = []
 
     def scrape_goodreads_list(
-        self, page: int = 1, page_limit: float|int = float("inf"), chosen_library=None
+        self, page: int = 1, page_limit: float | int = float("inf"), chosen_library=None
     ):
         """
         Scrapes the entire given goodreads list.
@@ -26,6 +26,14 @@ class GoodreadsScraper:
         # only desktop html targetted for now
         while True:
             list_url = f"{base_url}?shelf={self.list_name}&page={page}"
+
+
+            # outgoing request test
+            try:
+                response = requests.get("https://www.google.com")
+                print(f"Test request successful: {response.status_code}")
+            except requests.exceptions.RequestException as e:
+                print(f"Test request failed: {e}")
             response = requests.get(list_url, headers=headers)
             if response.status_code != 200 or page == last_page:
                 print(f"Page limit of {last_page} pages reached")
