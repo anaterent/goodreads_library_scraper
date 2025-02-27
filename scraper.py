@@ -33,7 +33,7 @@ class GoodreadsScraper:
                 print(f"Test request successful: {response.status_code}")
             except requests.exceptions.RequestException as e:
                 print(f"Test request failed: {e}")
-            response = requests.get(list_url, headers=headers, verify=False)
+            response = requests.get(list_url, headers=headers)
             if response.status_code != 200 or page == last_page:
                 print(f"Page limit of {last_page} pages reached")
                 break
