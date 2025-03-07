@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import urllib.parse
+import aiohttp
+import asyncio
 
 
 headers = {
@@ -14,78 +16,96 @@ class GoodreadsScraper:
         self.user = user
         self.list_name = list_name
         self.books = []
+        self.base_url = f"https://www.goodreads.com/review/list/{self.user}"
+
+    async def fetch_page(self, session, page):
+        list_url = f"{self.base_url}?shelf={self.list_name}&page={page}"
+
+        try:
+            async with session.get("https://www.google.com") as test_response:
+                print(f"Test request successful: {test_response.status}")
+
+            async with session.get(list_url, headers=headers) as response:
+                if response.status != 200:
+                    print(f"Page {page} fetch failed, Status: {response.status}")
+                    return None
+                return await response.text()
+        except aiohttp.ClientError as e:
+            print(f"Request error on page {page}: {e}")
+            return None
+
+    async def scrape(self, start_page, page_limit, chosen_library=None):
+        last_page = start_page + page_limit
+        async with aiohttp.ClientSession(
+            connector=aiohttp.TCPConnector(limit=20)
+        ) as session:
+            tasks = [
+                self.fetch_page(session, page) for page in range(start_page, last_page)
+            ]
+            pages_content = await asyncio.gather(*tasks)
+
+        for page_num, html in enumerate(pages_content, start=start_page):
+            if html:
+                if not self.parse_page(html, page_num, chosen_library):
+                    break  # Stop scraping if the shelf is empty
+
+    def parse_page(self, html, page, chosen_library) -> list:
+        soup = BeautifulSoup(html, "lxml")
+
+        if soup.find("html", {"class": "desktop"}):
+            print(f"Page {page}: DESKTOP YES")
+        else:
+            print(f"Page {page}: MOBILE YES")
+
+        empty_shelf = soup.find("p", {"class": "empty"})
+        if empty_shelf:
+            print(f"Page {page}: The shelf is empty.")
+            return False  # Stop further processing
+
+        rows = soup.find_all("tr", {"class": "bookalike review"})
+        if not rows:
+            print("No more books found.")
+            return False
+
+        for row in rows:
+            title = (
+                row.find("td", {"class": "field title"})
+                .find("div", {"class": "value"})
+                .get_text(strip=True)
+            )
+            author = (
+                row.find("td", {"class": "field author"})
+                .find("div", {"class": "value"})
+                .get_text(strip=True)
+            )
+            rating = (
+                row.find("td", {"class": "field avg_rating"})
+                .find("div", {"class": "value"})
+                .get_text(strip=True)
+            )
+            book = {"title": title, "author": author, "rating": rating}
+            lib_scraper = LibraryScraper(book, chosen_library)
+            result = lib_scraper.check_local_library()
+            if result is not None:
+                availability, img_url = result
+                if availability:
+                    book["availability"] = availability
+                if img_url:
+                    book["img_url"] = img_url
+            self.books.append(book)
+
+        print(f"Page {page}: Found {len(rows)} books.")
+        # page += 1
+
+        return self.books  # Continue scraping
 
     def scrape_goodreads_list(
         self, page: int = 1, page_limit: float | int = float("inf"), chosen_library=None
-    ):
+    ) -> list:
         """
         Scrapes the entire given goodreads list.
         """
-        base_url = f"https://www.goodreads.com/review/list/{self.user}"
-        last_page = page + page_limit
-        # only desktop html targetted for now
-        while True:
-            list_url = f"{base_url}?shelf={self.list_name}&page={page}"
-
-            # outgoing request test
-            try:
-                response = requests.get("https://www.google.com")
-                print(f"Test request successful: {response.status_code}")
-            except requests.exceptions.RequestException as e:
-                print(f"Test request failed: {e}")
-            response = requests.get(list_url, headers=headers)
-            if response.status_code != 200 or page == last_page:
-                print(f"Page limit of {last_page} pages reached")
-                break
-
-            soup = BeautifulSoup(response.content, "html.parser")
-            if bool(soup.find("html", {"class": "desktop"})):
-                print("DESKTOP YES")
-            else:
-                print("MOBILE YES")
-            # Check if the shelf is empty
-            empty_shelf = soup.find("p", {"class": "empty"})
-            if empty_shelf:
-                print("The shelf is empty.")
-                break
-
-            rows = soup.find_all("tr", {"class": "bookalike review"})
-
-            if not rows:
-                print("No more books found.")
-                break
-
-            for row in rows:
-                title = (
-                    row.find("td", {"class": "field title"})
-                    .find("div", {"class": "value"})
-                    .get_text(strip=True)
-                )
-                author = (
-                    row.find("td", {"class": "field author"})
-                    .find("div", {"class": "value"})
-                    .get_text(strip=True)
-                )
-                rating = (
-                    row.find("td", {"class": "field avg_rating"})
-                    .find("div", {"class": "value"})
-                    .get_text(strip=True)
-                )
-                book = {"title": title, "author": author, "rating": rating}
-                lib_scraper = LibraryScraper(book, chosen_library)
-                result = lib_scraper.check_local_library()
-                if result is not None:
-                    availability, img_url = result
-                    if availability:
-                        book["availability"] = availability
-                    if img_url:
-                        book["img_url"] = img_url
-                self.books.append(book)
-
-            print(f"Scraped page {page}, found {len(rows)} books.")
-            page += 1
-
-        return self.books
+        return asyncio.run(self.scrape(page, page_limit, chosen_library))
 
     def find_at(self, chosen_library: str):
         """
@@ -255,11 +275,11 @@ def format_book_data(books, chosen_library):
     return "\n\n".join(formatted_books)
 
 
-# if __name__ == "__main__":
-#     goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
-#     library = "Nunawading"
-#     books = goodreads_scraper.scrape_goodreads_list(
-#         page_limit=1, chosen_library=library
-#     )
-#     books_at_lib = goodreads_scraper.find_at(library)
-#     save_books_to_file(books_at_lib, "books_at_lib.json")
+if __name__ == "__main__":
+    goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
+    library = "Nunawading"
+    books = goodreads_scraper.scrape_goodreads_list(
+        page_limit=5, chosen_library=library
+    )
+    books_at_lib = goodreads_scraper.find_at(library)
+    save_books_to_file(books_at_lib, "books_at_lib.json")

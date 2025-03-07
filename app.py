@@ -27,7 +27,7 @@ class UserForm(FlaskForm):
 
 def scraper_init(username: str, list_name: str, library: str):
     goodreads_scraper = GoodreadsScraper(username, list_name)
-    goodreads_scraper.scrape_goodreads_list(page_limit=1, chosen_library=library)
+    goodreads_scraper.scrape_goodreads_list(page_limit=3, chosen_library=library)
     books_at_lib = goodreads_scraper.find_at(library)
     return books_at_lib
 
