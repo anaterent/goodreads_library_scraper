@@ -4,7 +4,7 @@ from flask_wtf import FlaskForm, CSRFProtect
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
 import secrets
-from scraper import GoodreadsScraper, format_book_data
+from scraper import GoodreadsScraper
 
 # Initialize Flask app
 app = Flask(__name__)

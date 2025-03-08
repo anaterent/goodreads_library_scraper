@@ -5,3 +5,5 @@ wtforms
 gunicorn
 requests
 beautifulsoup4
+aiohttp
+asyncio
