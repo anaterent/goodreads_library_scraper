@@ -179,7 +179,7 @@ class LibraryScraper:
 
 ############# THIS IS THE ISSUE: CANNOT FIND CORRECT FIRST SELECTOR (IN PLACE OF div#BK-pane-84405260-url)
                 # WITHOUT THIS SELECTOR, IT WILL FOCUS ON THE RESERVATION BUTTON INSTEAD
-            book_link = result.select_one("div#BK-pane-84405260-url div.card-text.availability a[href]")
+            book_link = result.select_one(".dropdown-item")
 
             print("Book link found:", book_link)
             if not book_link:
