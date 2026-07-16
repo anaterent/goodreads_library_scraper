@@ -4,7 +4,7 @@ from flask_wtf import FlaskForm, CSRFProtect
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
 import secrets
-from scraper import GoodreadsScraper
+from scraper import GoodreadsScraper, LibraryScraper
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -27,9 +27,8 @@ class UserForm(FlaskForm):
 
 def scraper_init(username: str, list_name: str, library: str):
     goodreads_scraper = GoodreadsScraper(username, list_name)
-    goodreads_scraper.scrape_goodreads_list(page_limit=2, chosen_library=library)
-    books_at_lib = goodreads_scraper.find_at(library)
-    return books_at_lib
+    books = goodreads_scraper.scrape_goodreads_list(page_limit=2)
+    return LibraryScraper().books_at_branch(books, library)
 
 
 # Homepage with form
