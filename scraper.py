@@ -102,9 +102,10 @@ class LibraryScraper:
 
     def enrich_book(self, book: dict, branch: str) -> dict | None:
         match = self.search_catalog(book)
+
         if match is None:
             return None
-        print(match)
+        print("library match:", match)
 
         holdings = self.get_holdings(match["availability_url"])
         branch_holdings = [
@@ -172,13 +173,15 @@ class LibraryScraper:
                 book["author"], author
             ):
                 continue
-            print(title, author)
+
+            print("- " * 10)
+            print("Searching for:", title, author)
 
 ############# THIS IS THE ISSUE: CANNOT FIND CORRECT FIRST SELECTOR (IN PLACE OF div#BK-pane-84405260-url)
                 # WITHOUT THIS SELECTOR, IT WILL FOCUS ON THE RESERVATION BUTTON INSTEAD
             book_link = result.select_one("div#BK-pane-84405260-url div.card-text.availability a[href]")
 
-            print(book_link)
+            print("Book link found:", book_link)
             if not book_link:
                 continue
 
