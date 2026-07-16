@@ -183,7 +183,7 @@ class LibraryScraper:
                 continue
 
 
-            availability_url = f"https://wml.spydus.com{book_link["href"]}"
+            availability_url = f"https://wml.spydus.com{book_link['href']}"
 
             print(title, author, availability_url)
 
