@@ -1,166 +1,752 @@
 [
     {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "rating": "3.98"
+    },
+    {
+        "title": "Meetings with Remarkable Manuscripts",
+        "author": "Christopher de Hamel",
+        "rating": "4.43"
+    },
+    {
+        "title": "The Canterbury Tales",
+        "author": "Geoffrey Chaucer",
+        "rating": "3.52"
+    },
+    {
+        "title": "Gunnar's Daughter",
+        "author": "Sigrid Undset",
+        "rating": "4.22"
+    },
+    {
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes Saavedra",
+        "rating": "3.87"
+    },
+    {
+        "title": "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking",
+        "author": "Samin Nosrat",
+        "rating": "4.39"
+    },
+    {
+        "title": "The Great Divorce",
+        "author": "C.S. Lewis",
+        "rating": "4.36"
+    },
+    {
+        "title": "The Light Years (Cazalet Chronicles, #1)",
+        "author": "Elizabeth Jane Howard",
+        "rating": "3.98"
+    },
+    {
+        "title": "The Kamogawa Food Detectives (Kamogawa Food Detectives, #1)",
+        "author": "Hisashi Kashiwai",
+        "rating": "3.67"
+    },
+    {
+        "title": "The Convenience Store by the Sea (Convenience Store by the Sea, #1)",
+        "author": "Sonoko Machida",
+        "rating": "3.66"
+    },
+    {
+        "title": "The Passengers on the Hankyu Line",
+        "author": "Hiro Arikawa",
+        "rating": "3.74"
+    },
+    {
+        "title": "Mara and Morok",
+        "author": "\u041b\u0438\u044f \u0410\u0440\u0434\u0435\u043d",
+        "rating": "4.16"
+    },
+    {
+        "title": "The Ballad of the Sad Caf\u00e9 and Other Stories",
+        "author": "Carson McCullers",
+        "rating": "3.95"
+    },
+    {
+        "title": "Hangsaman",
+        "author": "Shirley Jackson",
+        "rating": "3.76"
+    },
+    {
+        "title": "Just an Ordinary Day: The Uncollected Stories",
+        "author": "Shirley Jackson",
+        "rating": "4.18"
+    },
+    {
+        "title": "You're Not Listening: What You're Missing and Why It Matters",
+        "author": "Kate   Murphy",
+        "rating": "4.07"
+    },
+    {
+        "title": "Wait Until Spring, Bandini (The Saga of Arturo Bandini, #1)",
+        "author": "John Fante",
+        "rating": "4.13"
+    },
+    {
         "title": "The Virgin Suicides",
-        "author": "Eugenides, Jeffrey",
-        "rating": "3.79",
-        "availability": [
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "EUGE",
-                "status": "Onloan - Due: 21 Feb 2025"
-            }
-        ],
-        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9781250074812/mc.gif&client=wmrlp&upc=&oclc=**"
+        "author": "Jeffrey Eugenides",
+        "rating": "3.80"
+    },
+    {
+        "title": "There Are Rivers in the Sky",
+        "author": "Elif Shafak",
+        "rating": "4.31"
+    },
+    {
+        "title": "The Stranger",
+        "author": "Albert Camus",
+        "rating": "4.04"
     },
     {
         "title": "Small Things Like These",
-        "author": "Keegan, Claire",
-        "rating": "4.15",
-        "availability": [
-            {
-                "location": "Blackburn",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 05 Mar 2025"
-            },
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 26 Mar 2025"
-            },
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 03 Mar 2025"
-            },
-            {
-                "location": "Bulleen",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 15 Mar 2025"
-            },
-            {
-                "location": "Bulleen",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 08 Mar 2025"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 06 Mar 2025"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 07 Mar 2025"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 11 Mar 2025"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Reservation awaiting collection (Set: 20 Feb 2025)"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 03 Mar 2025"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 26 Feb 2025"
-            },
-            {
-                "location": "Vermont",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 01 Mar 2025"
-            },
-            {
-                "location": "Vermont",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "In-transit from Warrandyte to Blackburn (Set: 18 Feb 2025)"
-            },
-            {
-                "location": "Warrandyte",
-                "collection": "Adult fiction",
-                "call_number": "KEEG",
-                "status": "Onloan - Due: 06 Mar 2025"
-            }
-        ],
-        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9780571368709/mc.gif&client=wmrlp&upc=&oclc=1317511094**"
+        "author": "Claire Keegan",
+        "rating": "4.07"
+    },
+    {
+        "title": "A Cage in Search of a Bird (The French List)",
+        "author": "Florence Noiville",
+        "rating": "3.78"
+    },
+    {
+        "title": "The Enchanted April",
+        "author": "Elizabeth von Arnim",
+        "rating": "3.87"
+    },
+    {
+        "title": "Peach Blossom Paradise",
+        "author": "Ge Fei",
+        "rating": "4.04"
+    },
+    {
+        "title": "The Stolen Bicycle",
+        "author": "Wu Ming-Yi",
+        "rating": "3.78"
+    },
+    {
+        "title": "All My Puny Sorrows",
+        "author": "Miriam Toews",
+        "rating": "4.01"
     },
     {
         "title": "A Thousand Splendid Suns",
-        "author": "Hosseini, Khaled*",
-        "rating": "4.44",
-        "availability": [
-            {
-                "location": "Blackburn",
-                "collection": "Adult fiction",
-                "call_number": "HOSS",
-                "status": "Onloan - Due: 26 Feb 2025"
-            },
-            {
-                "location": "Doncaster",
-                "collection": "Adult fiction",
-                "call_number": "HOSS",
-                "status": "Onloan - Due: 13 Mar 2025"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "HOSS",
-                "status": "Available"
-            },
-            {
-                "location": "Pines",
-                "collection": "Adult fiction",
-                "call_number": "HOSS",
-                "status": "Onloan - Due: 11 Mar 2025"
-            },
-            {
-                "location": "Vermont",
-                "collection": "Adult fiction",
-                "call_number": "HOSS",
-                "status": "Onloan - Due: 11 Mar 2025"
-            }
-        ],
-        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9780747585893/mc.gif&client=wmrlp&upc=&oclc=**"
+        "author": "Khaled Hosseini",
+        "rating": "4.45"
+    },
+    {
+        "title": "The Bee Sting",
+        "author": "Paul Murray",
+        "rating": "3.89"
+    },
+    {
+        "title": "Prophet Song",
+        "author": "Paul    Lynch",
+        "rating": "4.00"
+    },
+    {
+        "title": "North Woods",
+        "author": "Daniel       Mason",
+        "rating": "4.09"
+    },
+    {
+        "title": "Still Life",
+        "author": "Sarah Winman",
+        "rating": "4.07"
+    },
+    {
+        "title": "The Island of Missing Trees",
+        "author": "Elif Shafak",
+        "rating": "4.12"
+    },
+    {
+        "title": "The Mountains Sing",
+        "author": "Nguy\u1ec5n Phan Qu\u1ebf Mai",
+        "rating": "4.30"
     },
     {
         "title": "Snow Crash",
-        "author": "Stephenson, Neal*",
-        "rating": "4.02",
-        "availability": [
-            {
-                "location": "Box Hill",
-                "collection": "Adult fiction",
-                "call_number": "STEP",
-                "status": "Onloan - Due: 11 Mar 2025"
-            },
-            {
-                "location": "Nunawading",
-                "collection": "Adult fiction",
-                "call_number": "STEP",
-                "status": "Onloan - Due: 14 Mar 2025"
-            }
-        ],
-        "img_url": "https://secure.syndetics.com/index.aspx?isbn=9780553380958/mc.gif&client=wmrlp&upc=&oclc=**"
+        "author": "Neal Stephenson",
+        "rating": "4.02"
+    },
+    {
+        "title": "Starter Villain",
+        "author": "John Scalzi",
+        "rating": "4.07"
+    },
+    {
+        "title": "The Book That Wouldn\u2019t Burn (The Library Trilogy, #1)",
+        "author": "Mark  Lawrence",
+        "rating": "3.90"
+    },
+    {
+        "title": "The Will of the Many (Hierarchy, #1)",
+        "author": "James Islington",
+        "rating": "4.57"
+    },
+    {
+        "title": "Yumi and the Nightmare Painter (Hoid's Travails, #2)",
+        "author": "Brandon Sanderson",
+        "rating": "4.42"
+    },
+    {
+        "title": "The Color of Magic (Discworld, #1; Rincewind, #1)",
+        "author": "Terry Pratchett",
+        "rating": "4.04"
+    },
+    {
+        "title": "The Women",
+        "author": "Kristin Hannah",
+        "rating": "4.56"
+    },
+    {
+        "title": "Cutting for Stone",
+        "author": "Abraham   Verghese",
+        "rating": "4.32"
+    },
+    {
+        "title": "A Gentleman in Moscow",
+        "author": "Amor Towles",
+        "rating": "4.28"
+    },
+    {
+        "title": "What You Are Looking for Is in the Library",
+        "author": "Michiko Aoyama",
+        "rating": "4.02"
+    },
+    {
+        "title": "Legends & Lattes (Legends & Lattes, #1)",
+        "author": "Travis Baldree",
+        "rating": "4.01"
+    },
+    {
+        "title": "Bookshops & Bonedust (Legends & Lattes, #0)",
+        "author": "Travis Baldree",
+        "rating": "4.09"
+    },
+    {
+        "title": "The House of the Spirits",
+        "author": "Isabel Allende",
+        "rating": "4.27"
+    },
+    {
+        "title": "Portrait in Sepia",
+        "author": "Isabel Allende",
+        "rating": "4.01"
+    },
+    {
+        "title": "Daughter of Fortune",
+        "author": "Isabel Allende",
+        "rating": "3.94"
+    },
+    {
+        "title": "Sea of Tranquility",
+        "author": "Emily St. John Mandel",
+        "rating": "4.03"
+    },
+    {
+        "title": "Bright Young Women",
+        "author": "Jessica Knoll",
+        "rating": "3.97"
+    },
+    {
+        "title": "Good Material",
+        "author": "Dolly Alderton",
+        "rating": "3.82"
+    },
+    {
+        "title": "The Street",
+        "author": "Ann Petry",
+        "rating": "4.27"
+    },
+    {
+        "title": "I Capture the Castle",
+        "author": "Dodie Smith",
+        "rating": "3.98"
+    },
+    {
+        "title": "Decline and Fall",
+        "author": "Evelyn Waugh",
+        "rating": "3.86"
+    },
+    {
+        "title": "Bliss Montage",
+        "author": "Ling  Ma",
+        "rating": "3.88"
+    },
+    {
+        "title": "The Hour of the Star",
+        "author": "Clarice Lispector",
+        "rating": "4.10"
+    },
+    {
+        "title": "The Heaven & Earth Grocery Store",
+        "author": "James   McBride",
+        "rating": "3.81"
+    },
+    {
+        "title": "Lady Tan's Circle of Women",
+        "author": "Lisa See",
+        "rating": "4.30"
+    },
+    {
+        "title": "The Covenant of Water",
+        "author": "Abraham   Verghese",
+        "rating": "4.32"
+    },
+    {
+        "title": "Mild Vertigo",
+        "author": "Mieko Kanai",
+        "rating": "3.49"
+    },
+    {
+        "title": "The Emigrants",
+        "author": "W.G. Sebald",
+        "rating": "4.20"
+    },
+    {
+        "title": "The Loser",
+        "author": "Thomas Bernhard",
+        "rating": "4.09"
+    },
+    {
+        "title": "Korn\u00e9l Esti",
+        "author": "Dezs\u0151 Kosztol\u00e1nyi",
+        "rating": "4.18"
+    },
+    {
+        "title": "Journey by Moonlight",
+        "author": "Antal Szerb",
+        "rating": "4.22"
+    },
+    {
+        "title": "The Copenhagen Trilogy (The Copenhagen Trilogy #1-3)",
+        "author": "Tove Ditlevsen",
+        "rating": "4.36"
+    },
+    {
+        "title": "David Copperfield",
+        "author": "Charles Dickens",
+        "rating": "4.03"
+    },
+    {
+        "title": "Stoner",
+        "author": "John  Williams",
+        "rating": "4.36"
+    },
+    {
+        "title": "The Late Mattia Pascal",
+        "author": "Luigi Pirandello",
+        "rating": "4.07"
+    },
+    {
+        "title": "Kira-Kira",
+        "author": "Cynthia Kadohata",
+        "rating": "3.98"
+    },
+    {
+        "title": "Middlemarch",
+        "author": "George Eliot",
+        "rating": "4.01"
+    },
+    {
+        "title": "Middlesex",
+        "author": "Jeffrey Eugenides",
+        "rating": "4.03"
+    },
+    {
+        "title": "Foster",
+        "author": "Claire Keegan",
+        "rating": "4.30"
+    },
+    {
+        "title": "The Summer Book",
+        "author": "Tove Jansson",
+        "rating": "4.02"
+    },
+    {
+        "title": "Happy Place",
+        "author": "Emily Henry",
+        "rating": "3.92"
+    },
+    {
+        "title": "Everything I Know About Love",
+        "author": "Dolly Alderton",
+        "rating": "3.94"
+    },
+    {
+        "title": "La tregua",
+        "author": "Mario Benedetti",
+        "rating": "4.18"
+    },
+    {
+        "title": "The Aleph and Other Stories",
+        "author": "Jorge Luis Borges",
+        "rating": "4.43"
+    },
+    {
+        "title": "Hopscotch",
+        "author": "Julio Cort\u00e1zar",
+        "rating": "4.23"
+    },
+    {
+        "title": "Cosmicomics",
+        "author": "Italo Calvino",
+        "rating": "4.22"
+    },
+    {
+        "title": "Tom Lake",
+        "author": "Ann Patchett",
+        "rating": "3.90"
+    },
+    {
+        "title": "Go as a River",
+        "author": "Shelley Read",
+        "rating": "4.19"
+    },
+    {
+        "title": "Maame",
+        "author": "Jessica George",
+        "rating": "4.02"
+    },
+    {
+        "title": "The Stationery Shop",
+        "author": "Marjan Kamali",
+        "rating": "4.22"
+    },
+    {
+        "title": "Out",
+        "author": "Natsuo Kirino",
+        "rating": "3.94"
+    },
+    {
+        "title": "Freshwater",
+        "author": "Akwaeke Emezi",
+        "rating": "4.02"
+    },
+    {
+        "title": "No One Writes Back",
+        "author": "Jang Eun-Jin",
+        "rating": "4.23"
+    },
+    {
+        "title": "Ms Ice Sandwich",
+        "author": "Mieko Kawakami",
+        "rating": "3.75"
+    },
+    {
+        "title": "The Housekeeper and the Professor",
+        "author": "Y\u014dko Ogawa",
+        "rating": "4.03"
+    },
+    {
+        "title": "Stay True",
+        "author": "Hua Hsu",
+        "rating": "3.98"
+    },
+    {
+        "title": "Happy Hour",
+        "author": "Marlowe Granados",
+        "rating": "3.44"
+    },
+    {
+        "title": "Spring Snow (The Sea of Fertility, #1)",
+        "author": "Yukio Mishima",
+        "rating": "4.19"
+    },
+    {
+        "title": "Seven Days in June",
+        "author": "Tia Williams",
+        "rating": "3.94"
+    },
+    {
+        "title": "Cannery Row (Cannery Row, #1)",
+        "author": "John Steinbeck",
+        "rating": "4.06"
+    },
+    {
+        "title": "The Count of Monte Cristo",
+        "author": "Alexandre Dumas",
+        "rating": "4.31"
+    },
+    {
+        "title": "King of Scars (King of Scars, #1)",
+        "author": "Leigh Bardugo",
+        "rating": "4.15"
+    },
+    {
+        "title": "All the Living and the Dead",
+        "author": "Hayley Campbell",
+        "rating": "4.25"
+    },
+    {
+        "title": "Cemetery Boys (Cemetery Boys, #1)",
+        "author": "Aiden Thomas",
+        "rating": "4.24"
+    },
+    {
+        "title": "If We Were Villains",
+        "author": "M.L. Rio",
+        "rating": "4.07"
+    },
+    {
+        "title": "The Violin Conspiracy",
+        "author": "Brendan Slocumb",
+        "rating": "4.05"
+    },
+    {
+        "title": "A World of Curiosities (Chief Inspector Armand Gamache, #18)",
+        "author": "Louise Penny",
+        "rating": "4.32"
+    },
+    {
+        "title": "A Psalm for the Wild-Built (Monk & Robot, #1)",
+        "author": "Becky Chambers",
+        "rating": "4.21"
+    },
+    {
+        "title": "Peach Blossom Spring",
+        "author": "Melissa Fu",
+        "rating": "4.15"
+    },
+    {
+        "title": "Four Treasures of the Sky",
+        "author": "Jenny Tinghui Zhang",
+        "rating": "4.06"
+    },
+    {
+        "title": "Demon Copperhead",
+        "author": "Barbara Kingsolver",
+        "rating": "4.44"
+    },
+    {
+        "title": "Lessons in Chemistry",
+        "author": "Bonnie Garmus",
+        "rating": "4.23"
+    },
+    {
+        "title": "Tomorrow, and Tomorrow, and Tomorrow",
+        "author": "Gabrielle Zevin",
+        "rating": "4.09"
+    },
+    {
+        "title": "The Night Circus",
+        "author": "Erin Morgenstern",
+        "rating": "3.99"
+    },
+    {
+        "title": "The Invisible Life of Euridice Gusmao",
+        "author": "Martha Batalha",
+        "rating": "3.69"
+    },
+    {
+        "title": "L'Arminuta",
+        "author": "Donatella Di Pietrantonio",
+        "rating": "4.09"
+    },
+    {
+        "title": "Today Tonight Tomorrow (Rowan & Neil, #1)",
+        "author": "Rachel Lynn Solomon",
+        "rating": "4.01"
+    },
+    {
+        "title": "Some Mistakes Were Made",
+        "author": "Kristin Dwyer",
+        "rating": "3.89"
+    },
+    {
+        "title": "Only a Monster (Monsters, #1)",
+        "author": "Vanessa Len",
+        "rating": "3.85"
+    },
+    {
+        "title": "Hard-Boiled Wonderland and the End of the World",
+        "author": "Haruki Murakami",
+        "rating": "4.13"
+    },
+    {
+        "title": "East of Eden",
+        "author": "John Steinbeck",
+        "rating": "4.43"
+    },
+    {
+        "title": "Dead Poets Society",
+        "author": "N.H. Kleinbaum",
+        "rating": "4.19"
+    },
+    {
+        "title": "Why We Sleep: Unlocking the Power of Sleep and Dreams",
+        "author": "Matthew Walker",
+        "rating": "4.35"
+    },
+    {
+        "title": "The Seven Husbands of Evelyn Hugo",
+        "author": "Taylor Jenkins Reid",
+        "rating": "4.38"
+    },
+    {
+        "title": "The Nightingale",
+        "author": "Kristin Hannah",
+        "rating": "4.64"
+    },
+    {
+        "title": "The Culture Code: The Secrets of Highly Successful Groups",
+        "author": "Daniel Coyle",
+        "rating": "4.21"
+    },
+    {
+        "title": "Leviathan Wakes",
+        "author": "James S.A. Corey",
+        "rating": "4.30"
+    },
+    {
+        "title": "House of Leaves",
+        "author": "Mark Z. Danielewski",
+        "rating": "4.11"
+    },
+    {
+        "title": "Ender\u2019s Game (Ender's Saga, #1)",
+        "author": "Orson Scott Card",
+        "rating": "4.31"
+    },
+    {
+        "title": "Deep Work: Rules for Focused Success in a Distracted World",
+        "author": "Cal Newport",
+        "rating": "4.15"
+    },
+    {
+        "title": "Betty",
+        "author": "Tiffany   McDaniel",
+        "rating": "4.38"
+    },
+    {
+        "title": "Never Let Me Go",
+        "author": "Kazuo Ishiguro",
+        "rating": "3.85"
+    },
+    {
+        "title": "The Poet X",
+        "author": "Elizabeth Acevedo",
+        "rating": "4.35"
+    },
+    {
+        "title": "A Place for Us",
+        "author": "Fatima Farheen Mirza",
+        "rating": "4.17"
+    },
+    {
+        "title": "American Gods (American Gods, #1)",
+        "author": "Neil Gaiman",
+        "rating": "4.10"
+    },
+    {
+        "title": "One for the Money (Stephanie Plum, #1)",
+        "author": "Janet Evanovich",
+        "rating": "4.05"
+    },
+    {
+        "title": "The Devotion of Suspect X (Detective Galileo, #1)",
+        "author": "Keigo Higashino",
+        "rating": "4.16"
+    },
+    {
+        "title": "The Keeper of Happy Endings",
+        "author": "Barbara  Davis",
+        "rating": "4.45"
+    },
+    {
+        "title": "The Local School",
+        "author": "Colin Phelan",
+        "rating": "4.28"
+    },
+    {
+        "title": "Homegoing",
+        "author": "Yaa Gyasi",
+        "rating": "4.47"
+    },
+    {
+        "title": "Someone Who Will Love You in All Your Damaged Glory",
+        "author": "Raphael Bob-Waksberg",
+        "rating": "4.01"
+    },
+    {
+        "title": "The Poppy War (The Poppy War, #1)",
+        "author": "R.F. Kuang",
+        "rating": "4.14"
+    },
+    {
+        "title": "This Woven Kingdom (This Woven Kingdom, #1)",
+        "author": "Tahereh Mafi",
+        "rating": "3.93"
+    },
+    {
+        "title": "Scythe (Arc of a Scythe, #1)",
+        "author": "Neal Shusterman",
+        "rating": "4.31"
+    },
+    {
+        "title": "Infinite Jest",
+        "author": "David Foster Wallace",
+        "rating": "4.27"
+    },
+    {
+        "title": "Defy the Stars (Constellation, #1)",
+        "author": "Claudia Gray",
+        "rating": "4.02"
+    },
+    {
+        "title": "Autobiography of Red: A Novel in Verse",
+        "author": "Anne Carson",
+        "rating": "4.26"
+    },
+    {
+        "title": "Invisible Child: Poverty, Survival & Hope in an American City",
+        "author": "Andrea Elliott",
+        "rating": "4.70"
+    },
+    {
+        "title": "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
+        "author": "Bessel van der Kolk",
+        "rating": "4.32"
+    },
+    {
+        "title": "The Snakehead: An Epic Tale of the Chinatown Underworld and the American Dream",
+        "author": "Patrick Radden Keefe",
+        "rating": "4.14"
+    },
+    {
+        "title": "Under the Whispering Door",
+        "author": "T.J. Klune",
+        "rating": "4.09"
+    },
+    {
+        "title": "V for Vendetta",
+        "author": "Alan Moore",
+        "rating": "4.26"
+    },
+    {
+        "title": "Archenemies (Renegades, #2)",
+        "author": "Marissa Meyer",
+        "rating": "4.24"
+    },
+    {
+        "title": "Skyhunter (Skyhunter, #1)",
+        "author": "Marie Lu",
+        "rating": "4.02"
+    },
+    {
+        "title": "J R",
+        "author": "William Gaddis",
+        "rating": "4.29"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "rating": "4.24"
+    },
+    {
+        "title": "Dance of Thieves (Dance of Thieves, #1)",
+        "author": "Mary E. Pearson",
+        "rating": "4.09"
     }
 ]

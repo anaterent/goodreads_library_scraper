@@ -2,13 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import urllib.parse
-import aiohttp
-import asyncio
+import xml.etree.ElementTree as ET
 
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
+
+RSS_PER_PAGE = 30
 
 
 class GoodreadsScraper:
@@ -16,97 +17,78 @@ class GoodreadsScraper:
         self.user = user
         self.list_name = list_name
         self.books = []
-        self.base_url = f"https://www.goodreads.com/review/list/{self.user}"
+        self.rss_base_url = f"https://www.goodreads.com/review/list_rss/{self.user}"
 
-    async def fetch_page(self, session, page):
-        list_url = f"{self.base_url}?shelf={self.list_name}&page={page}"
+    def fetch_rss_page(self, page):
+        params = {
+            "shelf": self.list_name,
+            "per_page": RSS_PER_PAGE,
+            "page": page,
+        }
 
         try:
-            async with session.get("https://www.google.com") as test_response:
-                print(f"Test request successful: {test_response.status}")
-
-            async with session.get(list_url, headers=headers) as response:
-                if response.status != 200:
-                    print(f"Page {page} fetch failed, Status: {response.status}")
-                    return None
-                return await response.text()
-        except aiohttp.ClientError as e:
+            response = requests.get(
+                self.rss_base_url, params=params, headers=headers, timeout=30
+            )
+            if response.status_code != 200:
+                print(f"Page {page} fetch failed, Status: {response.status_code}")
+                return []
+            root = ET.fromstring(response.content)
+            return root.findall("./channel/item")
+        except (requests.RequestException, ET.ParseError) as e:
             print(f"Request error on page {page}: {e}")
-            return None
+            return []
 
-    async def scrape(self, start_page, page_limit, chosen_library=None):
-        last_page = start_page + page_limit
-        async with aiohttp.ClientSession(
-            connector=aiohttp.TCPConnector(limit=20)
-        ) as session:
-            tasks = [
-                self.fetch_page(session, page) for page in range(start_page, last_page)
-            ]
-            pages_content = await asyncio.gather(*tasks)
-
-        for page_num, html in enumerate(pages_content, start=start_page):
-            if html:
-                if not self.parse_page(html, page_num, chosen_library):
-                    break  # Stop scraping if the shelf is empty
-
-    def parse_page(self, html, page, chosen_library) -> list:
-        soup = BeautifulSoup(html, "lxml")
-
-        if soup.find("html", {"class": "desktop"}):
-            print(f"Page {page}: DESKTOP YES")
-        else:
-            print(f"Page {page}: MOBILE YES")
-
-        empty_shelf = soup.find("p", {"class": "empty"})
-        if empty_shelf:
-            print(f"Page {page}: The shelf is empty.")
-            return False  # Stop further processing
-
-        rows = soup.find_all("tr", {"class": "bookalike review"})
-        if not rows:
-            print("No more books found.")
+    def parse_items(self, items, page, chosen_library) -> bool:
+        if not items:
+            print(f"Page {page}: No books found.")
             return False
 
-        for row in rows:
-            title = (
-                row.find("td", {"class": "field title"})
-                .find("div", {"class": "value"})
-                .get_text(strip=True)
-            )
-            author = (
-                row.find("td", {"class": "field author"})
-                .find("div", {"class": "value"})
-                .get_text(strip=True)
-            )
-            rating = (
-                row.find("td", {"class": "field avg_rating"})
-                .find("div", {"class": "value"})
-                .get_text(strip=True)
-            )
+        for item in items:
+            title = item.findtext("title", default="").strip()
+            author = item.findtext("author_name", default="").strip()
+            rating = item.findtext("average_rating", default="").strip()
+            if not title:
+                continue
+
             book = {"title": title, "author": author, "rating": rating}
-            lib_scraper = LibraryScraper(book, chosen_library)
-            result = lib_scraper.check_local_library()
-            if result is not None:
-                availability, img_url = result
-                if availability:
-                    book["availability"] = availability
-                if img_url:
-                    book["img_url"] = img_url
+            if chosen_library:
+                lib_scraper = LibraryScraper(book, chosen_library)
+                result = lib_scraper.check_local_library()
+                if result is not None:
+                    availability, img_url = result
+                    if availability:
+                        book["availability"] = availability
+                    if img_url:
+                        book["img_url"] = img_url
+
             self.books.append(book)
 
-        print(f"Page {page}: Found {len(rows)} books.")
-        # page += 1
-
-        return self.books  # Continue scraping
+        print(f"Page {page}: Found {len(items)} books.")
+        return True
 
     def scrape_goodreads_list(
         self, page: int = 1, page_limit: float | int = float("inf"), chosen_library=None
     ) -> list:
         """
-        Scrapes the entire given goodreads list.
+        Scrapes the given Goodreads shelf via its RSS feed.
         """
-        return asyncio.run(self.scrape(page, page_limit, chosen_library))
+        current_page = page
+        pages_fetched = 0
 
+        while True:
+            items = self.fetch_rss_page(current_page)
+            if not self.parse_items(items, current_page, chosen_library):
+                break
+
+            pages_fetched += 1
+            if page_limit != float("inf") and pages_fetched >= int(page_limit):
+                break
+            if len(items) < RSS_PER_PAGE:
+                break
+            current_page += 1
+
+        return self.books
     def find_at(self, chosen_library: str):
         """
         Find which books from your list are in your chosen library
@@ -277,9 +259,12 @@ def format_book_data(books, chosen_library):
 
 if __name__ == "__main__":
     goodreads_scraper = GoodreadsScraper("151602501-apricot", "to-read")
-    library = "Nunawading"
+    # library = "Nunawading"
+    # books = goodreads_scraper.scrape_goodreads_list(
+    #     page_limit=5, chosen_library=library
+    # )
     books = goodreads_scraper.scrape_goodreads_list(
-        page_limit=5, chosen_library=library
+        page_limit=5
     )
-    books_at_lib = goodreads_scraper.find_at(library)
-    save_books_to_file(books_at_lib, "books_at_lib.json")
+    # books_at_lib = goodreads_scraper.find_at(library)
+    save_books_to_file(books, "books_at_lib.json")
